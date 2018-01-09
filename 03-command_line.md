@@ -20,7 +20,20 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+show current working directory path |	pwd
+creating a directory	| mkdir 
+deleting a directory |	rmdir -d/-r # remove empty directories / remove directory with its subdirectories 
+creating a file using touch command	| touch somfile.txt
+deleting a file	| rm
+renaming a file	| mv original.txt new.txt
+listing hidden files |	ls -a
+copying a file from one directory to another	| cp (copied_file) (desired_directory_path)
+searches a plain text file for a line matching a regex | grep (stands for 'global regular expression print').
+makes command case insensitive | grep -i
+searches all files in a directory and oputs filenames and lines containing matched results | grep -R(-R stands for recursive)
+returns names of files containing a match | grep -Rl 
+
 
 ---
 
@@ -35,7 +48,14 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+* ls:	Short listing
+* ls -l:	Long listing
+* ls -a:	Listing including hidden files
+* ls -lh	:Long listing with Human readable file sizes
+* ls -lah: Displays long list, including hidden files with a human readable file size
+* ls -t	Displays newest files first (based on timestamp)
+* ls -Glp: list all contents in directory in long format, excluding display group and directories with a '/'
 
 ---
 
@@ -43,7 +63,13 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+-q	| Displays all nonprinting characters as ?
+-r	| Displays files in reverse order.
+-R	| Displays subdirectories as well.
+-t	| Displays newest files first. (based on timestamp)
+-1	| Displays each entry on a line.
+-p	| Displays directories with /
 
 ---
 
@@ -51,7 +77,16 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > The most important usage of xargs command is to combine Xargs with Find Command. When you need to find certain type of files and perform certain actions on them (most popular being the delete action). https://www.thegeekstuff.com/2013/12/xargs-examples/
+So, in this example, the output of the find command is all the files with *.c extension, which is given as input to the xargs command, which in-turn execute “rm -rf” command on all the *.c files.
+$ ls
+one.c  one.h  two.c  two.h
+
+$ find . -name "*.c" | xargs rm -rf
+
+$ ls
+one.h  two.h
+
 
  
 
