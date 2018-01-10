@@ -21,18 +21,20 @@ Here's a list of items with which you should be familiar:
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
 > > 
-show current working directory path |	pwd
-creating a directory	| mkdir 
-deleting a directory |	rmdir -d/-r # remove empty directories / remove directory with its subdirectories 
-creating a file using touch command	| touch somfile.txt
-deleting a file	| rm
-renaming a file	| mv original.txt new.txt
-listing hidden files |	ls -a
-copying a file from one directory to another	| cp (copied_file) (desired_directory_path)
-searches a plain text file for a line matching a regex | grep (stands for 'global regular expression print').
-makes command case insensitive | grep -i
-searches all files in a directory and oputs filenames and lines containing matched results | grep -R(-R stands for recursive)
-returns names of files containing a match | grep -Rl 
+| Action | Command |
+| --- | ---- |
+| show current working directory path |	pwd |
+| creating a directory	| mkdir |
+| deleting a directory |	rmdir -d/-r # remove empty directories / remove directory with its subdirectories |
+| creating a file using touch command	| touch somfile.txt|
+| deleting a file	| rm (filename)|
+| renaming a file	| mv original.txt new.txt|
+| listing hidden files |	ls -a|
+| copying a file from one directory to another	| cp (copied_file) (desired_directory_path)|
+| searches a plain text file for a line matching a regex | grep (stands for 'global regular expression print').|
+| makes command case insensitive | grep -i|
+| searches all files in a directory and oputs filenames and lines containing matched results | grep -R(-R stands for recursive)|
+|returns names of files containing a match | grep -Rl |
 
 
 ---
@@ -54,7 +56,7 @@ What do the following commands do:
 * ls -a:	Listing including hidden files
 * ls -lh	:Long listing with Human readable file sizes
 * ls -lah: Displays long list, including hidden files with a human readable file size
-* ls -t	Displays newest files first (based on timestamp)
+* ls -t	Displays files forder by latest date and time
 * ls -Glp: list all contents in directory in long format, excluding display group and directories with a '/'
 
 ---
@@ -64,12 +66,14 @@ What do the following commands do:
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
 > > 
--q	| Displays all nonprinting characters as ?
--r	| Displays files in reverse order.
--R	| Displays subdirectories as well.
--t	| Displays newest files first. (based on timestamp)
--1	| Displays each entry on a line.
--p	| Displays directories with /
+| Command | What it does |
+| ---- | ---- |
+| -q	| Displays all nonprinting characters as ? |
+| -r	| Displays files in reverse order.|
+| -R	| Displays subdirectories as well.|
+| -t	| Displays newest files first. (based on timestamp)|
+| -1	| Displays each entry on a line.|
+| -p	| Displays directories with / |
 
 ---
 
