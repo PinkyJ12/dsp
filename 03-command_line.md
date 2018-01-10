@@ -81,15 +81,18 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > The most important usage of xargs command is to combine Xargs with Find Command. When you need to find certain type of files and perform certain actions on them (most popular being the delete action). https://www.thegeekstuff.com/2013/12/xargs-examples/ **
-So, in this example, the output of the find command is all the files with *.c extension, which is given as input to the xargs command, which in-turn execute “rm -rf” command on all the *.c files.**
-$ ls **
-one.c  one.h  two.c  two.h **
+> > The most important usage of xargs command is to combine Xargs with Find Command. When you need to find certain type of files and perform certain actions on them (most popular being the delete action). [Examples](https://www.thegeekstuff.com/2013/12/xargs-examples/) 
 
-$ find . -name "*.c" | xargs rm -rf **
+So, in this example, the output of the find command is all the files with *.c extension, which is given as input to the xargs command, which in-turn execute “rm -rf” command on all the *.c files.
+$ ls 
 
-$ ls **
-one.h  two.h
+ one.c  one.h  two.c  two.h 
+
+$ find . -name "*.c" | xargs rm -rf 
+
+$ ls 
+
+ one.h  two.h
 
 
  
