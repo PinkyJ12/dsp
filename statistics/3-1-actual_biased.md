@@ -6,15 +6,13 @@ Use the NSFG respondent variable NUMKDHH to construct the actual distribution fo
   
 Plot the actual and biased distributions, and compute their means. (As a starting place, you can use chap03ex.ipynb)
 
-```python
-import nsfg    
-```
 Load Data
 ```python
+import nsfg    
     
-    df2 = nsfg.ReadFemResp()
-    ```
-# Construct Distribution
+df2 = nsfg.ReadFemResp()
+ ```
+Construct Distribution
 ```python
 pmf=thinkstats2.Pmf(resp.numkdhh, label='Children<18')
 ```
